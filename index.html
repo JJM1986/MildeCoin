@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MildeCoin (MLDE) — BRC-20 Token on Bitcoin</title>
+  <link rel="icon" href="assets/logo.png" type="image/png"/>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -256,6 +257,58 @@
     .step-content h3 { color: #fff; margin-bottom: 6px; }
     .step-content p { color: #888; font-size: 0.95rem; line-height: 1.6; }
 
+    /* DNS SECTION */
+    .dns-section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .dns-section h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #f7931a;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .dns-section p {
+      color: #aaa;
+      text-align: center;
+      margin-bottom: 36px;
+      font-size: 1rem;
+    }
+    .dns-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: rgba(255,255,255,0.03);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .dns-table th {
+      background: rgba(247,147,26,0.15);
+      color: #f7931a;
+      padding: 14px 18px;
+      text-align: left;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+    .dns-table td {
+      padding: 14px 18px;
+      color: #ccc;
+      font-size: 0.95rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      font-family: monospace;
+    }
+    .dns-note {
+      margin-top: 20px;
+      background: rgba(247,147,26,0.08);
+      border: 1px solid rgba(247,147,26,0.2);
+      border-radius: 10px;
+      padding: 16px 20px;
+      color: #aaa;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
     /* CTA */
     .cta {
       text-align: center;
@@ -289,7 +342,7 @@
   <!-- NAV -->
   <nav>
     <div class="nav-logo">
-      <img src="https://media.base44.com/images/public/6a17af121381195ea62845c3/93aa9501e_generated_image.png" alt="MildeCoin Logo" />
+      <img src="assets/logo.png" alt="MildeCoin Logo" />
       MildeCoin
     </div>
     <div class="nav-links">
@@ -297,13 +350,14 @@
       <a href="#features">Features</a>
       <a href="#token">Token</a>
       <a href="#howto">So geht's</a>
+      <a href="#domain">Domain</a>
       <a href="https://github.com/JJM1986/MildeCoin" target="_blank">GitHub</a>
     </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
-    <img src="https://media.base44.com/images/public/6a17af121381195ea62845c3/93aa9501e_generated_image.png" alt="MildeCoin Logo" class="hero-logo" />
+    <img src="assets/logo.png" alt="MildeCoin Logo" class="hero-logo" />
     <h1>MildeCoin</h1>
     <div class="ticker">$MLDE</div>
     <p>Der erste BRC-20 Token direkt auf der Bitcoin Blockchain — sicher, dezentral und für alle zugänglich.</p>
@@ -415,6 +469,32 @@
     </div>
   </section>
 
+  <!-- DNS / DOMAIN SECTION -->
+  <section class="dns-section" id="domain">
+    <h2>Eigene Domain einrichten</h2>
+    <p>Verbinde <strong style="color:#f7931a">mildecoin.com</strong> mit dieser GitHub Pages Seite — in 3 einfachen Schritten.</p>
+    <table class="dns-table">
+      <thead>
+        <tr>
+          <th>Typ</th>
+          <th>Host</th>
+          <th>Wert</th>
+          <th>TTL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>A</td><td>@</td><td>185.199.108.153</td><td>Auto</td></tr>
+        <tr><td>A</td><td>@</td><td>185.199.109.153</td><td>Auto</td></tr>
+        <tr><td>A</td><td>@</td><td>185.199.110.153</td><td>Auto</td></tr>
+        <tr><td>A</td><td>@</td><td>185.199.111.153</td><td>Auto</td></tr>
+        <tr><td>CNAME</td><td>www</td><td>jjm1986.github.io</td><td>Auto</td></tr>
+      </tbody>
+    </table>
+    <div class="dns-note">
+      📌 <strong>So geht's:</strong> DNS-Einträge bei deinem Domain-Anbieter (z.B. Namecheap) eintragen → unter <a href="https://github.com/JJM1986/MildeCoin/settings/pages" target="_blank" style="color:#f7931a">GitHub Pages Settings</a> die Custom Domain eintragen → HTTPS aktivieren. Fertig! Vollständige Anleitung: <a href="https://github.com/JJM1986/MildeCoin/blob/main/DNS-SETUP.md" target="_blank" style="color:#f7931a">DNS-SETUP.md</a>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="cta">
     <h2>Bereit loszulegen?</h2>
@@ -427,7 +507,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 MildeCoin (MLDE) — BRC-20 Token on Bitcoin | <a href="https://github.com/JJM1986/MildeCoin" target="_blank">GitHub</a></p>
+    <p>© 2026 MildeCoin (MLDE) — BRC-20 Token on Bitcoin | <a href="https://github.com/JJM1986/MildeCoin" target="_blank">GitHub</a> | <a href="https://github.com/JJM1986/MildeCoin/blob/main/DNS-SETUP.md" target="_blank">DNS Setup</a></p>
   </footer>
 
 </body>
